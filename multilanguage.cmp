@@ -1,0 +1,16 @@
+<aura:component implements='forceCommunity:availableForAllPageTypes' controller='userContext' access="global">
+    <aura:attribute name="searchHub" type="String" default="communityCoveo"/>
+	<aura:attribute name="usertitle" type="String" />
+    <CoveoV2:Search aura:id="multilanguagesCoveo"
+        name="communityCoveo"
+        searchHub="communityCoveo"
+        autoInjectBasicQuery="false"
+        autoInitialize="true"
+        customScripts="{!$Resource.detectLanguageChange}"             
+       />
+    <style>
+        #CoveoInterfaceEditorToolbox.cCommunityPopularArticles {
+            display: none;
+        }
+    </style>
+</aura:component>
