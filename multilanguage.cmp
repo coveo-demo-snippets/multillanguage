@@ -6,7 +6,7 @@
         searchHub="communityCoveo"
         autoInjectBasicQuery="false"
         autoInitialize="true"
-        customScripts="{!$Resource.detectLanguageChange}"             
+        customScripts="{!$Resource.multilanguage}"             
        />
     <style>
         #CoveoInterfaceEditorToolbox.cCommunityPopularArticles {
